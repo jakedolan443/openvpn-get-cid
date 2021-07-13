@@ -15,7 +15,7 @@ or
 where CID is the client ID and MSG is a message that can be delivered to a client through logs. 
 
 This is useful for implementing bandwidth caps and other systems where a client's certificate is revoked. Key revokation is not enough, as clients still remain connected post-key exchange, and no longer exchange information - so, killing a client connection is necessary.
-Supplying a message keeps things ordered and tidy, and is probably nicer on the user's end too.
+Supplying a message keeps things ordered and tidy, and is probably nicer on the user's end. `kill` does not support the MSG parameter.
 This message would appear in OpenVPN config (on the client side) as:
 ![](https://i.imgur.com/HLWzeY0.png)
 
