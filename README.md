@@ -21,7 +21,7 @@ This message would appear in OpenVPN config (on the client side) as:
 
 The management interface is designed for manual usage; this script allows the retrieval of CIDs which can be piped
 into scripts with netcat or telnet e.g.
-`echo "client-kill {}" | nc -q 5 127.0.0.1 20800`
+`echo "client-kill CID" | nc -q 5 127.0.0.1 20800`
 
 This script is intended to be imported, e.g.
 ```
